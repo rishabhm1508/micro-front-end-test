@@ -33,8 +33,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
-            "extraWebpackConfig": " webpack.config.js"
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -56,8 +55,7 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "outputHashing": "all",
-              "extraWebpackConfig": "webpack.prod.config.js"
+              "outputHashing": "all"
             },
             "development": {
               "buildOptimizer": false,
@@ -72,11 +70,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          "extraWebpackConfig": "webpack.config.js",
           "configurations": {
             "production": {
-              "browserTarget": "micro-front-end-one:build:production",
-              "extraWebpackConfig": "webpack.prod.config.js"
+              "browserTarget": "micro-front-end-one:build:production"
             },
             "development": {
               "browserTarget": "micro-front-end-one:build:development"
@@ -105,8 +101,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
-            "extraWebpackConfig": "webpack.config.js"
+            "scripts": []
           }
         },
         "server": {

@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && npm run webpack --config webpack.prod.config.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng run micro-front-end-one:serve-ssr",
