@@ -10,7 +10,11 @@
     "dev:ssr": "ng run micro-front-end-one:serve-ssr",
     "serve:ssr": "node dist/micro-front-end-one/server/main.js",
     "build:ssr": "ng build && ng run micro-front-end-one:server",
-    "prerender": "ng run micro-front-end-one:prerender"
+    "prerender": "ng run micro-front-end-one:prerender",
+    "build:client-and-server-bundles": "ng build --prod && ng run micro-front-end-one:server:production --bundleDependencies all",
+    "start:heroku":"node dist/server",
+    "postinstall":"npm run build:ssr" 
+
   },
   "private": true,
   "dependencies": {
